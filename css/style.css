@@ -1,0 +1,152 @@
+/*
+    Anotações:
+        Paleta de cores:
+            264653
+            2A9D8F
+            E9C46A
+            F4A261
+            E76F51
+*/
+/*
+    Propriedades Gerais
+*/
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', SegoeUI;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: SegoeUI;
+    src: url(../font/segoeui.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/opensans.ttf);
+}
+html, body{
+    min-height: 100%;
+}
+body > .nav-links{
+    overflow: hidden;
+}
+/*
+    Cabeçalho
+*/
+header{
+    background-color: #264653;
+    padding: 0 5%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+header #logo{
+    background-image: url(../img/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 7px;
+    transition: .75s all;
+    font-weight: bold;
+}
+header nav a:hover{
+    border-radius: 5px;
+    background-color: #FFFFFF15;
+}
+header a#selected{
+    background-color: white;
+    border-radius: 5px;
+    color: #264653;
+}
+header nav #a_switch{
+    padding: 8px;
+    transition: all .3s;
+    border-radius: 100%;
+}
+header nav #a_switch:hover{
+    cursor: pointer;
+}
+header nav a #switch{
+    padding: 13px;
+    width: 0;
+    height: 0;
+}
+.nav-links{
+    display: block;
+    transition: .8s all;
+    padding: 10px;
+}
+#a_hamburguer{
+    cursor: pointer;
+}
+.hamburguer{
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamburguer .hamburguer-line{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin-block: 10px;
+    border-radius: 4px;
+    transition: transform .5s;
+    opacity: .25s;
+}
+.hamburguer.active .hamburguer-line:nth-child(1){
+    transform: translateY(13px)
+    rotate(45deg);
+}
+.hamburguer.active .hamburguer-line:nth-child(2){
+    opacity: 0;
+}
+.hamburguer.active .hamburguer-line:nth-child(3){
+    transform: translateY(-13px)
+    rotate(-45deg);
+}
+@media (max-width: 1180px){
+    .hamburguer{
+        display: block;
+        opacity: 1;
+    }
+    .nav-links{
+        display: none;
+        z-index: 5;
+        flex-direction: column;
+        align-items: left;
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        right: -250px;
+        top: 80px;
+        padding-top: 10px;
+    }
+    .nav-links a{
+        margin-top: 3px;
+    }
+    .nav-links a:hover{
+        background-color: #26465320;
+    }
+    header a#selected{
+        background-color: #264653;
+        color: white;
+    }
+}
