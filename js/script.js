@@ -12,7 +12,7 @@ window.onresize = function(){
             $('.nav-links').css('display','none');
             hamburguerTester();
         }
-    }, 1000)
+    }, 10)
 }
 /*
     Hamburguer (menu / header)
