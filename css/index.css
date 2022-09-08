@@ -4,7 +4,7 @@
 .welcome{
     padding: 5% 5%;
     background-color: #2A9D8F;
-    color: #fff;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,6 +192,7 @@
     padding: 30px 5%;
     text-align: center;
     width: 100%;
+    background-color: #E9C46A;
 }
 .card-v{
     width: 30%;
@@ -214,7 +215,255 @@
 }
 @media (max-width: 500px){
     .card-v{
-        width: 95%;
+        width: 90%;
         min-width: 275px;
+    }
+}
+/*
+    Seção de texto com imagem
+*/
+.secao{
+    padding: 30px 5%;
+    background-color: #E9C46A;
+}
+.secao .article{
+    margin: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.secao .article p{
+    width: 40%;
+    min-width: 300px;
+    text-align: left;
+}
+.secao .article-2 p{
+    text-align: right;
+    order: 2;
+}
+.secao .article-img{
+    width: 500px;
+    background-color: black;
+    height: 300px;
+}
+@media (max-width: 1180px){
+    .secao .article{
+        display: block;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .secao .article *{
+        margin: 0 auto;
+    }
+    .secao .article p{
+        margin: 10px auto;
+        width: 500px;
+    }
+    .secao .article-2 p{
+        text-align: left;
+        
+    }
+}
+@media (max-width: 650px){
+    .secao .article p{
+        width: 85%;
+        min-width: 300px;
+    }
+    .secao .article-img{
+        width: 100%;
+        min-width: 300px;
+    }
+}
+@media (max-width: 425px){
+    .secao .article-img{
+        height: 200px;
+    }
+}
+/*
+    Carrossel
+*/
+.carrossel{
+    width: 100%;
+    padding: 90px 5%;
+    text-align: center;
+    position: relative;
+}
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    font-size: 0;
+    background-image: url(../img/arrow.svg);
+    padding: 13px;
+    border: 0;
+    border-radius: 100%;
+    background-color: #2A9D8F;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.slick-next{
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    font-size: 0;
+    background-image: url(../img/arrow.svg);
+    padding: 13px;
+    border: 0;
+    border-radius: 100%;
+    background-color: #2A9D8F;
+    cursor: pointer;
+}
+.slick-dots li{
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid #2A9D8F;
+    outline: none;
+    margin: 5px;
+    border-radius: 100%;
+}
+.slick-dots .slick-active{
+    background: #2A9D8F;
+}
+.slick-dots li button{
+    display: none;
+}
+.carrossel-container{
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.carrossel-content .c-img{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+.c-img1{
+    background-color: #264653;
+}
+.c-img2{
+    background-color: #2A9D8F;
+}
+.c-img3{
+    background-color: #E9C46A;
+}
+.c-img4{
+    background-color: #F4A261;
+}
+.c-img5{
+    background-color: #E76F51;
+}
+@media (max-width: 850px){
+    .carrossel-content .c-img{
+        height: 300px;
+    }
+}
+@media (max-width: 630px){
+    .carrossel{
+        display: none;
+    }
+}
+/*
+    FAQ
+*/
+.faq{
+    padding: 90px 5%;
+    transition: .5s all;
+}
+.faq-titulo{
+    font-weight: bold;
+    font-size: 50px;
+    color: #264653;
+}
+.faq-duvidas{
+    margin: 15px 25px;
+}
+.faq-duvidas details{
+    padding: 10px;
+    border: 1px solid #264653;
+    color: #264653;
+    margin: 5px 0;
+}
+.faq-duvidas details summary{
+    cursor: pointer;
+    user-select: none;
+}
+.faq-duvidas details p{
+    margin-top: 15px;
+}
+.faq-duvidas details{
+    transition: height 1s ease;
+    overflow: hidden;
+}
+.faq-duvidas details:not([open]){
+    height: 43px;
+}
+@media (max-width: 500px){
+    .faq-titulo{
+        font-size: 35px;
+    }
+}
+/*
+    Fale conosco
+*/
+.contato{
+    padding: 80px 5%;
+    background-color: #2A9D8F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contato-texto{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.contato a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #264653;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+    user-select: none;
+}
+.contato a div{
+    margin: 0 5px;
+}
+.contato a .whatsapp-button{
+    background-image: url(../img/logo-whatsapp.svg);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    
+}
+.contato a .whatsapp-texto{
+    margin-bottom: 2px;
+    padding-left: 7px;
+    border-left: 1px solid #264653;
+}
+@media (max-width: 750px){
+    .contato{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .contato a{
+        margin: 15px auto;
+    }
+}
+@media (max-width: 500px){
+    .contato-texto{
+        font-size: 25px;
     }
 }

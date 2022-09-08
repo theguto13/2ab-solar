@@ -12,17 +12,10 @@
 */
 *{
     box-sizing: border-box;
-    font-family: 'Segoe UI', SegoeUI;
+    font-family: 'Segoe UI', Arial;
     margin: 0;
     padding: 0;
-}
-@font-face{
-    font-family: SegoeUI;
-    src: url(../font/segoeui.ttf);
-}
-@font-face {
-    font-family: OpenSans;
-    src: url(../font/opensans.ttf);
+    scroll-behavior: smooth;
 }
 html, body{
     min-height: 100%;
@@ -31,7 +24,7 @@ body > .nav-links{
     overflow: hidden;
 }
 /*
-    Cabeçalho
+    Header / Cabeçalho
 */
 header{
     background-color: #264653;
@@ -42,7 +35,7 @@ header{
     justify-content: space-between;
     user-select: none;
 }
-header #logo{
+header #logo-header{
     background-image: url(../img/logo.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -148,5 +141,103 @@ header nav a #switch{
     header a#selected{
         background-color: #264653;
         color: white;
+    }
+}
+/*
+    Footer / Rodapé
+*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px 5%;
+    background-color: black;
+}
+.logo-rodape{
+    background-image: url(../img/logo-rodape.svg);
+    width: 35%;
+    min-width: 400px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.nav-rodape{
+    user-select: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+.nav-rodape-texto{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.nav-rodape a{
+    margin: 7px 13px;
+    text-decoration: none;
+    color: white;
+    transition: color .3s;
+}
+.nav-rodape a:hover{
+    color: #ffffff9f;
+}
+.contato-rodape{
+    width: 30%;
+    color: white;
+}
+.contato-rodape div{
+    margin: 13px;
+}
+.contato-rodape .contato-rodape-texto{
+    user-select: none;
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+.contato-rodape div a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s;
+}
+.contato-rodape div a:hover{
+    color: #ffffff9f;
+}
+.redes-rodape{
+    user-select: none;
+    margin-top: 5px;
+}
+.redes-rodape div{
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 0;
+}
+.whatsapp{
+    background-image: url(../img/logo-whatsapp.svg);
+}
+.redes-rodape .instagram{
+    margin: 0 10px;
+    background-image: url(../img/logo-instagram.svg);
+}
+.facebook{
+    background-image: url(../img/logo-facebook.svg);
+}
+@media (max-width: 990px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-rodape, .nav-rodape, .contato-rodape{
+        margin: 30px auto;
+        width: 80%;
+        min-width: 0;
+    }
+    .logo-rodape{
+        min-width: 315px;
     }
 }

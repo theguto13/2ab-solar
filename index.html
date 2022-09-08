@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <title>2AB Solar</title>
 </head>
-<body>
+<body id="body">
     <!--Header / Cabeçalho-->
     <header>
-        <div class="logo">
+        <div class="logo-header">
             <img src="img/logo.svg" alt="Logotipo 2 A B Solar" width="130px" height="65px">
         </div>
         <nav>
@@ -24,7 +25,7 @@
                 </button>
             </a>
             <div class="nav-links">
-                <a href="#" id="selected">Início</a>
+                <a href="#body" id="selected">Início</a>
                 <a href="#">Matrizes energéticas</a>
                 <a href="#">Energia solar fotovoltaica</a>
                 <a href="#">Fontes de energia</a>
@@ -37,7 +38,7 @@
         <div class="welcome-1">
             <h1>Lorem. Ipsum dolor</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eos sunt hic magni nobis mollitia perferendis eveniet magnam voluptatibus? Ipsum doloribus quod impedit enim nemo vel? Repellat, quaerat quos!</p>
-            <input type="button" value="Saiba mais">
+            <a href="#"><input type="button" value="Saiba mais"></a>
         </div>
         <div class="welcome-2">
             <div class="img"></div>
@@ -93,26 +94,91 @@
         </div>
     </div>
     <!--Seção de texto com imagem-->
-    <!--<div class="secao">
-        <div class="article article1">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi blanditiis voluptate sit similique eaque odio tenetur nihil rem quaerat maiores dignissimos sunt porro, possimus voluptas minus rerum praesentium officia incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id a deleniti ex expedita nostrum saepe molestiae inventore aliquam iure consequuntur, iste laborum ipsum minus quis, ad magni maiores incidunt.</p>
+    <div class="secao">
+        <div class="article article-1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi blanditiis voluptate sit similique eaque odio tenetur nihil rem quaerat maiores dignissimos sunt porro, possimus voluptas minus rerum praesentium officia incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id a deleniti ex expedita nostrum saepe molestiae inventore aliquam iure consequuntur, iste laborum ipsum minus quis, ad magni maiores incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis dolorum consequuntur non quod, laborum voluptatum. Explicabo delectus nesciunt, corrupti nisi ipsam veritatis ullam culpa labore necessitatibus consequuntur hic aliquam!</p>
             <div class="article-img"></div>
         </div>
-        <div class="article article2">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi blanditiis voluptate sit similique eaque odio tenetur nihil rem quaerat maiores dignissimos sunt porro, possimus voluptas minus rerum praesentium officia incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id a deleniti ex expedita nostrum saepe molestiae inventore aliquam iure consequuntur, iste laborum ipsum minus quis, ad magni maiores incidunt.</p>
+        <div class="article article-2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi blanditiis voluptate sit similique eaque odio tenetur nihil rem quaerat maiores dignissimos sunt porro, possimus voluptas minus rerum praesentium officia incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id a deleniti ex expedita nostrum saepe molestiae inventore aliquam iure consequuntur, iste laborum ipsum minus quis, ad magni maiores incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis dolorum consequuntur non quod, laborum voluptatum. Explicabo delectus nesciunt, corrupti nisi ipsam veritatis ullam culpa labore necessitatibus consequuntur hic aliquam!</p>
             <div class="article-img"></div>
         </div>
-        <div class="article article3">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi blanditiis voluptate sit similique eaque odio tenetur nihil rem quaerat maiores dignissimos sunt porro, possimus voluptas minus rerum praesentium officia incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id a deleniti ex expedita nostrum saepe molestiae inventore aliquam iure consequuntur, iste laborum ipsum minus quis, ad magni maiores incidunt.</p>
+        <div class="article article-3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi blanditiis voluptate sit similique eaque odio tenetur nihil rem quaerat maiores dignissimos sunt porro, possimus voluptas minus rerum praesentium officia incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id a deleniti ex expedita nostrum saepe molestiae inventore aliquam iure consequuntur, iste laborum ipsum minus quis, ad magni maiores incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis dolorum consequuntur non quod, laborum voluptatum. Explicabo delectus nesciunt, corrupti nisi ipsam veritatis ullam culpa labore necessitatibus consequuntur hic aliquam!</p>
             <div class="article-img"></div>
         </div>
-    </div>--><div style="padding: 50px 5%; background-color: black;"></div>
-    <!--Carrossel-->
-    <div class="carrossel">
-        
     </div>
+    <!--Carrossel-->
+    <div class="carrossel" id="carrossel">
+        <div class="carrossel-container">
+            <div class="carrossel-content">
+                <div class="c-img c-img1"></div>
+                <div class="c-img c-img2"></div>
+                <div class="c-img c-img3"></div>
+                <div class="c-img c-img4"></div>
+                <div class="c-img c-img5"></div>
+            </div>
+        </div>
+    </div>
+    <!--FAQ-->
+    <div class="faq">
+        <div class="faq-titulo">Dúvidas Frequentes</div>
+        <div class="faq-duvidas">
+            <details>
+                <summary>Lorem ipsum dolor?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque, saepe earum consectetur sit nihil cupiditate quae at alias rem velit officiis modi veritatis unde? Assumenda laudantium totam nihil culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta veritatis quam aliquam debitis voluptatibus veniam, quod magni accusamus maxime vel dolor cupiditate exercitationem placeat eveniet. Consectetur, sint. Facere, aperiam?</p>
+            </details>
+            <details>
+                <summary>Lorem ipsum dolor?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque, saepe earum consectetur sit nihil cupiditate quae at alias rem velit officiis modi veritatis unde? Assumenda laudantium totam nihil culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta veritatis quam aliquam debitis voluptatibus veniam, quod magni accusamus maxime vel dolor cupiditate exercitationem placeat eveniet. Consectetur, sint. Facere, aperiam?</p>
+            </details>
+            <details>
+                <summary>Lorem ipsum dolor?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque, saepe earum consectetur sit nihil cupiditate quae at alias rem velit officiis modi veritatis unde? Assumenda laudantium totam nihil culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta veritatis quam aliquam debitis voluptatibus veniam, quod magni accusamus maxime vel dolor cupiditate exercitationem placeat eveniet. Consectetur, sint. Facere, aperiam?</p>
+            </details>
+            <details>
+                <summary>Lorem ipsum dolor?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque, saepe earum consectetur sit nihil cupiditate quae at alias rem velit officiis modi veritatis unde? Assumenda laudantium totam nihil culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta veritatis quam aliquam debitis voluptatibus veniam, quod magni accusamus maxime vel dolor cupiditate exercitationem placeat eveniet. Consectetur, sint. Facere, aperiam?</p>
+            </details>
+            <details>
+                <summary>Lorem ipsum dolor?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem atque, saepe earum consectetur sit nihil cupiditate quae at alias rem velit officiis modi veritatis unde? Assumenda laudantium totam nihil culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta veritatis quam aliquam debitis voluptatibus veniam, quod magni accusamus maxime vel dolor cupiditate exercitationem placeat eveniet. Consectetur, sint. Facere, aperiam?</p>
+            </details>
+        </div>
+    </div>
+    <!--Fale conosco-->
+    <div class="contato">
+        <div class="contato-texto">Ainda ficou com alguma dúvida? Fale com a gente pelo WhatsApp!</div>
+        <a href="https://api.whatsapp.com/send?phone=5599999999999&text=Ol%C3%A1%2C%20gostaria%20de%20perguntar%20sobre..." target="_blank">
+            <div class="whatsapp-button"></div>
+            <div class="whatsapp-texto">WhatsApp®</div>
+        </a>
+    </div>
+    <!--Footer / Rodapé-->
+    <footer>
+        <div class="logo-rodape"></div>
+        <div class="nav-rodape">
+            <div class="nav-rodape-texto">Navegação</div>
+            <a href="#body" id="selected">Início</a>
+            <a href="#">Matrizes energéticas</a>
+            <a href="#">Energia solar fotovoltaica</a>
+            <a href="#">Fontes de energia</a>
+            <a href="#">Sobre nós</a>
+        </div>
+        <div class="contato-rodape">
+            <div class="contato-rodape-texto">Contato</div>
+            <div class="endereco"><b>Endereço:</b> Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Concórdia</div>
+            <div class="email"><b>E-mail:</b><a href="mailto:someone@example.com"> someone@example.com</a></div>
+            <div class="redes-rodape">
+                <a href="#"><div class="whatsapp"></div></a>
+                <a href="#"><div class="instagram"></div></a>
+                <a href="#"><div class="facebook"></div></a>
+            </div>
+        </div>
+    </footer>
     <!--Scripts-->
     <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
