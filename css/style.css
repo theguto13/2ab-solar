@@ -20,8 +20,8 @@
 html, body{
     min-height: 100%;
 }
-body > .nav-links{
-    overflow: hidden;
+body{
+    overflow-x: hidden;
 }
 /*
     Header / Cabeçalho
@@ -192,6 +192,9 @@ footer{
 }
 .contato-rodape div{
     margin: 13px;
+}
+.contato-rodape > div > b{
+    user-select: none;
 }
 .contato-rodape .contato-rodape-texto{
     user-select: none;

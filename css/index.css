@@ -372,7 +372,7 @@
     FAQ
 */
 .faq{
-    padding: 90px 5%;
+    padding: 30px 5% 90px 5%;
     transition: .5s all;
 }
 .faq-titulo{
@@ -424,16 +424,16 @@
     color: white;
 }
 .contato a{
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    border: 1px solid #264653;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 5px;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #25d366;
     margin-top: 5px;
     margin-left: 30px;
     user-select: none;
@@ -444,14 +444,12 @@
 .contato a .whatsapp-button{
     background-image: url(../img/logo-whatsapp.svg);
     background-size: cover;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
 }
 .contato a .whatsapp-texto{
-    margin-bottom: 2px;
-    padding-left: 7px;
-    border-left: 1px solid #264653;
+    margin-bottom: 4px;
 }
 @media (max-width: 750px){
     .contato{
