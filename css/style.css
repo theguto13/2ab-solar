@@ -87,6 +87,9 @@ header nav a #switch{
 #a_hamburguer{
     cursor: pointer;
 }
+#a_hamburguer:hover{
+    background-color: transparent;
+}
 .hamburguer{
     display: none;
     background-color: transparent;
