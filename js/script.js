@@ -36,9 +36,9 @@ $(document).ready(function(){
             $('.hamburguer').addClass('active');
             $('.nav-links').height(($('body').height)-80-144);
             $('.nav-links').css('display','flex');
-            $('.nav-links').css('background-color','white');
-            $('.nav-links a').css('color','#264653');
-            $('#selected').css('color','white');
+            $('.nav-links').css('background-color','#264653');
+            $('.nav-links a').css('color','white');
+            $('#selected').css('color','#264653');
             setTimeout(function(){
                 $('.nav-links').css('right','0');
             },0.15*1000)

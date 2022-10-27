@@ -24,6 +24,21 @@ body{
     overflow-x: hidden;
 }
 /*
+    Scrollbar
+*/
+::-webkit-scrollbar{
+    width: 12px;
+    background: #E9C46A;
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb{
+    background: #2A9D8F;
+}
+::-webkit-scrollbar-track{
+    background-color: #E9C46A;
+    opacity: 0;
+}
+/*
     Header / Cabeçalho
 */
 header{
@@ -134,16 +149,17 @@ header nav a #switch{
         right: -250px;
         top: 80px;
         padding-top: 10px;
+        background-color: #264653;
     }
     .nav-links a{
         margin-top: 3px;
     }
     .nav-links a:hover{
-        background-color: #26465320;
+        background-color: #ffffff20;
     }
     header a#selected{
-        background-color: #264653;
-        color: white;
+        background-color: white;
+        color: #264653;
     }
 }
 /*
